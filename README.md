@@ -26,7 +26,10 @@ What if the code din't Work
 
 Important links 
 Support server - https://discord.gg/pJhTGrD5
+
 Discord account- flashwork#2210
+
 Youtube account- https://www.youtube.com/channel/UCZ1S5FrxatzteBjMBuw2E7Q
+
 github- https://github.com/Discord-codes
 
