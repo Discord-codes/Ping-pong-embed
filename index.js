@@ -9,9 +9,21 @@ app.listen(3000, () => {
  console.log("Bot is started ")
 })
 
-let Discord = require("discord.js");
-let client = new Discord.Client();
+const Discord = require("discord.js")
+let client = new Discord.Client()
 
+client.on('ready', () => {
+ client.user.setActivity('!help | TEST BOT', { type: 'PLAYING' })
+ })
+client.on("message", message => {
+  if(message.content === "!help") {
+let embed = new Discord.MessageEmbed()
+ .setTitle("Commands")
+ .addField("UTILITY", "`!ping` `!say` `!help` `!invite` `!serverinfo`")
+ .setFooter(`Requested by ${message.author.tag}`)
+ .setTimestamp()
+ message.channel.send(embed)
+}
 client.on("message", message => {
   if (message.content === "!ping") {
 let embed = new Discord.MessageEmbed()
