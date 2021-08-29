@@ -19,7 +19,7 @@ client.on("message", message => {
   if(message.content === "!help") {
 let embed = new Discord.MessageEmbed()
  .setTitle("Commands")
- .addField("UTILITY", "`!ping` `!say` `!help` `!invite` `!serverinfo`")
+ .addField("UTILITY", "`!ping`")
  .setFooter(`Requested by ${message.author.tag}`)
  .setTimestamp()
  message.channel.send(embed)
