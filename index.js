@@ -24,8 +24,7 @@ let embed = new Discord.MessageEmbed()
  .setTimestamp()
  message.channel.send(embed)
 }
-client.on("message", message => {
-  if (message.content === "!ping") {
+if (message.content === "!ping") {
 let embed = new Discord.MessageEmbed()
  .setTitle("Pong!")
  .setDescription(`Latency **${client.ws.ping}** ms`)
@@ -35,4 +34,4 @@ message.channel.send(embed)
 }
 })
 
-client.login("YOUR BOT TOKEN HERE")
+client.login(process.env.token)
